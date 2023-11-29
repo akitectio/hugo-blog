@@ -1,0 +1,32 @@
+version = 1
+name = "x-blog"
+license = "MIT"
+licenselink = "https://github.com/xdev-asia/x-blog/blob/main/LICENSE"
+description = "Blog Hugo Theme"
+homepage = "https://github.com/xdev-asia/x-blog"
+demosite = "https://x-blog.xdev.asia"
+tags = ["blog", "clean", "responsive", "dark", "theme"]
+
+features = [
+  "cover-image",
+  "favicon",
+  "multilingual",
+  "pagination",
+  "social-menu",
+  "syntax-highlighting",
+  "SEO Optimized",
+]
+
+[author]
+name = "xdev-asia"
+homepage = "https://github.com/xdev-asia/"
+
+[original]
+name = "DUY TRAN"
+homepage = "https://github.com/tdduydev"
+repo = "https://github.com/tdduydev"
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.83.0"

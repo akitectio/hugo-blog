@@ -1,0 +1,9 @@
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+    {{- $profile := .Site.Params.home.profile -}}
+    {{- $posts := .Site.Params.home.posts -}}
+
+    <div class="pt-6 container">
+        {{ partial "series.html" . }}
+    </div>
+{{- end -}}
