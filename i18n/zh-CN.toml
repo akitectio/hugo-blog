@@ -2,6 +2,9 @@
 # 简体中文的翻译
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "新文章"
+
 # === baseof ==
 [backToTop]
 other = "回到顶部"
@@ -250,4 +253,3 @@ other = "更改"
 [deleted]
 other = "删除"
 # === shortcodes/version.html ===
-

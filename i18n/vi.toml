@@ -1,9 +1,16 @@
 # Translations for Vietnamese
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+
+[featured_post]
+other = "Bài viết nổi bật"
+
 # === baseof ==
 [backToTop]
 other = "Lên trên"
+
+[news]
+other = "Bài viết mới"
 
 [viewComments]
 other = "Xem bình luận"
@@ -31,7 +38,7 @@ other = "Danh mục"
 other = "Danh mục"
 
 [series]
-other = "Sê-ri"
+other = "Series"
 # === Taxonomy ===
 
 # === Section ===

@@ -2,6 +2,9 @@
 # Tradução para Português de Portugal
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Novo artigo"
+
 # === baseof ==
 [backToTop]
 other = "Voltar ao topo"

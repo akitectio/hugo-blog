@@ -2,6 +2,9 @@
 # Превод на Српски
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Нови чланак"
+
 # === baseof ==
 [backToTop]
 other = "Назад на Врх"

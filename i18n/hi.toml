@@ -2,6 +2,9 @@
 # हिंदी में अनुवाद
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "नया लेख"
+
 # === baseof ==
 [backToTop]
 other = "वापस शीर्ष पर"

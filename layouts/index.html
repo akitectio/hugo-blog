@@ -1,9 +1,98 @@
 {{- define "content" -}}
-    {{- $params := .Scratch.Get "params" -}}
-    {{- $profile := .Site.Params.home.profile -}}
-    {{- $posts := .Site.Params.home.posts -}}
+{{- $params := .Scratch.Get "params" -}}
+{{- $showFeatured := site.Params.showFeaturedArticle -}}
+{{- $posts := .Site.Params.home.posts -}}
+{{ $featuredPosts := where .Site.RegularPages "Params.featured" true }}
+{{ $latestPosts := first 1 .Site.RegularPages }}
+{{- $featuredArticle := cond (eq (len $featuredPosts) 0) (first 1 .Site.RegularPages) (first 1 $featuredPosts) -}}
 
-    <div class="pt-6 container">
-        {{ partial "series.html" . }}
+
+<div class="tw-container tw-mx-auto tw-pt-6">
+
+  {{- if and $showFeatured (isset $featuredArticle "0") }}
+  {{- range $featuredArticle }}
+  {{ $title := .Title }}
+  {{ $permalink := .Permalink }} <!-- Capture the permalink outside the inner range/with blocks -->
+  <div class="featured-article tw-flex tw-flex-col md:tw-flex-row tw-mx-auto tw-pt-6 tw-p-4 tw-rounded tw-items-start">
+    <!-- Featured Image -->
+    {{ with .Params.featuredImage }}
+    <div class="image-container tw-w-full md:tw-w-3/5">
+      <!-- Image Link -->
+      <a href="{{ $permalink }}">
+        <img src="{{ . }}" alt="{{ $title }}" class="tw-w-full tw-h-auto tw-object-cover tw-rounded-lg">
+      </a>
     </div>
+    {{ end }}
+    <!-- Content -->
+    <div class="content-container tw-w-full md:tw-w-2/5 tw-pl-4">
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="category-link">{{ . }}</a>
+      {{ end }}
+      <!-- Title Link -->
+      <a href="{{ $permalink }}">
+        <h2 class="tw-ml-0 tw-text-lg tw-font-semibold">{{ $title }}</h2>
+      </a>
+      <!-- Article Description -->
+      {{ with .Params.description }}
+      <p class="tw-text-sm tw-mb-4">{{ . }}</p>
+      {{ end }}
+      <!-- Categories and Tags -->
+      <div class="tw-flex tw-flex-wrap">
+        {{ range .Params.tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tw-mr-2 tw-mb-2 tw-bg-gray-200 tw-px-2 tw-py-1 tw-rounded">#{{ . }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{- end }}
+  {{- end }}
+  
+
+        <div class="tw-series-list">
+          <section class="tw-pt-5 tw-pb-10 tw-lg:pt-[120px] tw-lg:pb-20 ">
+            <h1  class="tw-fs-25 tw-text-center tw-mb-4 tw-text-lg tw-font-semibold">
+              {{ i18n "news" }}
+            </h1>
+            <div id="akitect-post-list" class="tw-flex tw-flex-wrap tw--mx-4 tw-justify-items-center">
+
+              {{ $paginator := .Paginate (after 1 (where .Site.RegularPages "Section" "posts")) 12 }}
+
+              {{ range .Paginator.Pages }}
+              {{ $title := .Title }}
+                <div class="tw-px-4 tw-mb-10 tw-sm:w-1/2 tw-lg:w-1/5">
+                  <a href="{{ .Permalink }}" class="tw-text-dark tw-hover:text-primary">           
+                    <div class="tw-mx-auto tw-max-w-[350px] tw-p-4 tw-border tw-rounded tw-h-[400px]">
+                      {{ with .Params.featuredImage }}
+                        <img src="{{ . }}" alt="{{ $title }}" class="tw-br-5 tw-w-full tw-h-48 tw-object-cover tw-mb-4 tw-rounded-lg" />
+                      {{ else }}
+                        {{ with .Params.images }}
+                          {{ if gt (len .) 0 }}
+                            <img src="{{ index . 0 }}" alt="{{ $title }}" class="tw-br-5 tw-w-full tw-h-48 tw-object-cover tw-mb-4 tw-rounded-lg" />
+                          {{ end }}
+                        {{ end }}
+                      {{ end }}
+                      <div>
+                        {{ range .Params.categories }}
+                          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="category-link">{{ . }}</a>
+                        {{ end }}                
+                        <h3 class="tw-text-lg tw-font-semibold tw-m-0">
+                          <a href="{{ .Permalink }}" class="tw-text-dark tw-hover:text-primary">
+                            {{ $title }}
+                          </a>
+                        </h3>
+                        <div class="tw-tags">
+                          {{ range first 5 .Params.tags }}
+                          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tag-badge tw-mb-1">#{{ . }}</a>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              {{ end }}
+              
+            </div>
+          </section>
+        </div>        
+</div>
 {{- end -}}

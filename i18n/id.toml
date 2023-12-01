@@ -2,6 +2,9 @@
 # Terjemahan untuk Bahasa Indonesia
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Artikel Baru"
+
 # === baseof ==
 [backToTop]
 other = "Kembali ke Atas"

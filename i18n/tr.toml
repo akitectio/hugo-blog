@@ -2,6 +2,9 @@
 # Türkçe Çeviriler
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Yeni Makale"
+
 # === baseof ==
 [backToTop]
 other = "Başa Dön"
@@ -149,7 +152,7 @@ other = "{{ .Count }} kelime"
 
 [readingTime]
 one = "One minute"
-other = "{{ .Count }} dakika" 
+other = "{{ .Count }} dakika"
 
 [views]
 other = "görüntülenme"

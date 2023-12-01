@@ -2,6 +2,9 @@
 # తెలుగు కోసం అనువాదాలు
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "కొత్త వ్యాసం"
+
 # === baseof ==
 [backToTop]
 other = "పైకి"

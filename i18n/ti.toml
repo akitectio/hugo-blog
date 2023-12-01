@@ -1,6 +1,9 @@
 # Translations for English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "አዲስ ጽሑፍ"
+
 # === baseof ==
 [backToTop]
 other = "ናብ ላዕሊ ተመለስ"

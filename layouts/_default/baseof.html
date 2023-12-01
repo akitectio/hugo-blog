@@ -67,6 +67,7 @@
               ? setTheme("dark")
               : setTheme("light");
       }
+      
       let metaColors = { light: "#f8f8f8", dark: "#252627", black: "#000000" };
       getMeta("theme-color").content =
         metaColors[document.body.getAttribute("theme")];
@@ -78,6 +79,20 @@
     {{- /* Body wrapper */ -}}
     <div class="wrapper">
       {{- partial "header.html" . -}}
+      {{- if .IsHome -}}
+      <div style="margin-top: 50px; position: relative;">
+          <img style="width: 100%" id="bannerImage" class="inline banner-image" src="{{ .Site.Params.banner.light }}" alt="{{ .Site.Title }}">
+          <div style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 50%;
+              background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+          "></div>
+      </div>
+      {{- end -}}
+
       <main class="main">
         <div class="container">{{- block "content" . }}{{ end -}}</div>
       </main>

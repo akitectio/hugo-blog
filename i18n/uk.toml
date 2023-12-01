@@ -1,6 +1,9 @@
 # Translations for Ukrainian
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Нова стаття"
+
 # === baseof ==
 [backToTop]
 other = "Повернутися до початку"

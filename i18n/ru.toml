@@ -2,6 +2,9 @@
 # Переводы на русский
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Articol nou"
+
 # === baseof ==
 [backToTop]
 other = "Наверх"

@@ -2,6 +2,12 @@
 # ترجمات للغة العربية
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[featured_post]
+other = "المنشور المميز"
+
+[news]
+other = "مقال جديد"
+
 # === baseof ==
 [backToTop]
 other = "الرجوع للأعلى"

@@ -2,3 +2,49 @@
 // Custom style
 // 自定义样式
 // ==============================
+
+/* Trong file CSS của bạn */
+.category-link {
+    color: #158876; /* Màu cho category */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+.tag-badge {
+    background-color: darkgray; /* Màu tối cho badge của tag */
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+
+.tw-mt-100 {
+  margin-top: 100px;
+}
+
+.tw-fs-25 {
+  font-size: 25px
+}
+
+
+.tw-custom-category {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0px;
+}
+
+.tw-br-5  {
+  border-radius: 5px;
+}
+
+
+.tw-justify-items-center {
+  justify-content: center;
+}
+
+.tw-ml-0 {
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

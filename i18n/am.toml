@@ -1,6 +1,13 @@
 # Translations for English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+
+[featured_post]
+other = "Bài viết nổi bật"
+
+[news]
+other = "ወደላይ ተመለስ"
+
 # === baseof ==
 [backToTop]
 other = "ወደላይ ተመለስ"

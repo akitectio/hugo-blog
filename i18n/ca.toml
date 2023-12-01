@@ -2,6 +2,9 @@
 # Traducció al Català
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Article nou"
+
 # === baseof ==
 [backToTop]
 other = "Torna a L'inici"

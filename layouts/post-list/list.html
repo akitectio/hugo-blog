@@ -1,0 +1,36 @@
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 12 }}
+
+{{ range .Paginator.Pages }}
+{{ $title := .Title }}
+  <div class="tw-px-4 tw-mb-10 tw-sm:w-1/2 tw-lg:w-1/5">
+    <a href="{{ .Permalink }}" class="tw-text-dark tw-hover:text-primary">           
+      <div class="tw-mx-auto tw-max-w-[350px] tw-p-4 tw-border tw-rounded tw-h-[400px]">
+        {{ with .Params.featuredImage }}
+          <img src="{{ . }}" alt="{{ $title }}" class="tw-br-5 tw-w-full tw-h-48 tw-object-cover tw-mb-4 tw-rounded-lg" />
+        {{ else }}
+          {{ with .Params.images }}
+            {{ if gt (len .) 0 }}
+              <img src="{{ index . 0 }}" alt="{{ $title }}" class="tw-br-5 tw-w-full tw-h-48 tw-object-cover tw-mb-4 tw-rounded-lg" />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        <div>
+          {{ range .Params.categories }}
+            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="category-link">{{ . }}</a>
+          {{ end }}                
+          <h3 class="tw-text-lg tw-font-semibold tw-m-0">
+            <a href="{{ .Permalink }}" class="tw-text-dark tw-hover:text-primary">
+              {{ $title }}
+            </a>
+          </h3>
+          <div class="tw-tags">
+            {{ range first 5 .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tag-badge tw-mb-1">#{{ . }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+{{ end }}

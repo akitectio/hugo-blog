@@ -2,6 +2,9 @@
 # Traduceri pentru limba română
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Articol nou"
+
 # === baseof ==
 [backToTop]
 other = "Înapoi Sus"

@@ -1,6 +1,9 @@
 # Translations for Greek
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "Νέο άρθρο"
+
 # === baseof ==
 [backToTop]
 other = "Επιστροφή στην κορυφή"

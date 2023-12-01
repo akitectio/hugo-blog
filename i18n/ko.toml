@@ -1,6 +1,9 @@
 # Translations for Korean
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "새로운 기사"
+
 # === baseof ==
 [backToTop]
 other = "맨 위로"

@@ -1,6 +1,12 @@
 # Translations for English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[featured_post]
+other = "Featured Post"
+
+[news]
+other = "New Article"
+
 # === baseof ==
 [backToTop]
 other = "Back to Top"

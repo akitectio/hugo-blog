@@ -2,6 +2,9 @@
 # คำแปลภาษาไทย
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+[news]
+other = "บทความใหม่"
+
 # === baseof ==
 [backToTop]
 other = "กลับไปด้านบนสุด"
