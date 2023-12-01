@@ -1,10 +1,10 @@
 version = 1
-name = "x-blog"
+name = "hugo-blog"
 license = "MIT"
-licenselink = "https://github.com/xdev-asia/x-blog/blob/main/LICENSE"
+licenselink = "https://github.com/xdev-asia/hugo-blog/blob/main/LICENSE"
 description = "Blog Hugo Theme"
-homepage = "https://github.com/xdev-asia/x-blog"
-demosite = "https://x-blog.xdev.asia"
+homepage = "https://github.com/xdev-asia/hugo-blog"
+demosite = "https://hugo-blog.github.io"
 tags = ["blog", "clean", "responsive", "dark", "theme"]
 
 features = [
