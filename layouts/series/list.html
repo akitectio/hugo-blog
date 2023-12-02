@@ -1,0 +1,19 @@
+{{- define "content" -}}
+<div class="tw-container tw-mt-100">
+  <div class="tw-flex tw-flex-wrap tw--mx-4 tw-justify-items-center">
+    {{ range .Pages }}
+    <div class="tw-w-full tw-p-4 tw-border-b tw-border-gray-300">
+      <a href="{{ .Permalink }}" class="tw-flex">
+        {{ with .Params.featuredImage }}
+        <img class="tw-br-5 tw-max-w-[350px] tw-h-[400px] tw-h-32 tw-object-cover tw-mr-4" src="{{ . | absURL }}" alt="{{ $.Title }}">
+        {{ end }}
+        <div>
+          <h2 class="tw-ml-0 tw-text-xl tw-font-semibold">{{ .Title }}</h2>
+          <p class="tw-text-gray-700">{{ .Params.introduction }}</p>
+        </div>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{- end -}}
