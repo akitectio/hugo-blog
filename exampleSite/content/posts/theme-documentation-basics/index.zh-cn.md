@@ -6,7 +6,7 @@ lastmod: 2020-03-06T21:40:32+08:00
 draft: false
 authors: ["Dillon", "Trần Đức Duy"]
 description: "探索 Hugo - hugo-blog 主题的全部内容和背后的核心概念."
-featuredImage: "featured-image.webp"
+featuredImage: "/images/theme-documentation-basics.webp"
 
 tags: ["installation", "configuration"]
 categories: ["documentation"]

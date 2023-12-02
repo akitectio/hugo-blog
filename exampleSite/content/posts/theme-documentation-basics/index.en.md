@@ -6,7 +6,7 @@ lastmod: 2020-03-06T21:29:01+08:00
 draft: false
 authors: ["Dillon", "Trần Đức Duy"]
 description: "Discover what the Hugo - hugo-blog theme is all about and the core-concepts behind it."
-featuredImage: "featured-image.webp"
+featuredImage: "/images/theme-documentation-basics.webp"
 
 tags: ["installation", "configuration"]
 categories: ["documentation"]

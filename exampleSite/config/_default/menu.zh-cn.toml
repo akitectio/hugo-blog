@@ -48,14 +48,6 @@ url = "/authors/"
 title = ""
 weight = 5
 [[main]]
-identifier = "showcase"
-pre = ""
-post = ""
-name = "作品"
-url = "/showcase/"
-title = ""
-weight = 6
-[[main]]
 identifier = "documentation"
 pre = ""
 name = "文档"

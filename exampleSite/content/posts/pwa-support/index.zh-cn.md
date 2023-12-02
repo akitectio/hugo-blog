@@ -6,7 +6,7 @@ lastmod: 2021-05-10T16:21:41+01:00
 draft: false
 authors: ["Trần Đức Duy"]
 description: "Guide to setup PWA in hugo-blog"
-featuredImage: "featured-image.webp"
+featuredImage: "/images/pwa-support.webp"
 
 tags: ["PWA"]
 categories: ["Documentation"]

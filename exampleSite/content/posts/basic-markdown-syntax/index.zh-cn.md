@@ -6,7 +6,7 @@ lastmod: 2020-01-01T16:45:40+08:00
 draft: false
 authors: ["Dillon"]
 description: "这篇文章展示了基本的 Markdown 语法和格式."
-featuredImage: "featured-image.webp"
+featuredImage: "/images/basic-markdown-syntax.webp"
 
 tags: ["Markdown", "HTML"]
 categories: ["documentation"]

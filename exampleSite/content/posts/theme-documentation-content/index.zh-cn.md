@@ -6,7 +6,7 @@ lastmod: 2020-03-04T16:30:05+08:00
 draft: false
 authors: ["Dillon", "Trần Đức Duy"]
 description: "了解如何在 hugo-blog 主题中快速, 直观地创建和组织内容."
-featuredImage: "featured-image.webp"
+featuredImage: "/images/theme-documentation-content.webp"
 
 tags: ["content", "Markdown"]
 categories: ["documentation"]

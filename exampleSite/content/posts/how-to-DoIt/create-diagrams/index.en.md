@@ -14,7 +14,7 @@ series: [how-to-hugo-blog]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+featuredImage: "/images/create-diagrams.webp"
 featuredImagePreview: ""
 
 toc:

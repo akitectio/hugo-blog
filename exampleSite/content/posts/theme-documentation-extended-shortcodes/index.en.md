@@ -7,8 +7,7 @@ draft: false
 authors: [Dillon, Trần Đức Duy]
 description: "hugo-blog theme provides multiple shortcodes on top of built-in ones in Hugo."
 resources:
-featuredImage: "featured-image.webp"
-featuredImagePreview: "featured-image-preview.webp"
+featuredImage: "/images/theme-documentation-extended-shortcodes.webp"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

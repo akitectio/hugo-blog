@@ -8,8 +8,7 @@ authors: [Dillon, Trần Đức Duy]
 author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "hugo-blog 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."
-featuredImage: "featured-image.webp"
-featuredImagePreview: "featured-image-preview.webp"
+featuredImage: "/images/theme-documentation-extended-shortcodes.webp"
 series_weight: 4
 tags: ["shortcodes"]
 categories: ["documentation"]

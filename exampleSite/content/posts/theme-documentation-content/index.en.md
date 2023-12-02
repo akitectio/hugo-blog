@@ -6,7 +6,7 @@ lastmod: 2020-03-04T15:58:26+08:00
 draft: false
 authors: ["Dillon", "Trần Đức Duy"]
 description: "Find out how to create and organize your content quickly and intuitively in hugo-blog theme."
-featuredImage: "featured-image.webp"
+featuredImage: "/images/theme-documentation-content.webp"
 
 tags: ["content", "Markdown"]
 categories: ["documentation"]

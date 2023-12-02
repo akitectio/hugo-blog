@@ -1,5 +1,6 @@
 # website title
 # 网站标题
+showFeaturedArticle = true
 title = "Hugo hugo-blog Theme Documentation"
 # hugo-blog theme version
 # hugo-blog 主题版本
@@ -506,7 +507,7 @@ count = 5
 [sponsor]
 enable = false
 bio = "If you find this post helpful, please consider sponsoring."
-link = "https://github.com/sponsors/HEIGE-Trần Đức Duy"
+link = "https://github.com/sponsors/akitectio"
 # custom = "<a href=\"https://www.buymeacoffee.com/Trần Đức Duy\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
 
 # TypeIt config
@@ -626,3 +627,7 @@ polyfill = false
 # whether to use object-fit-images to be compatible with older browsers
 # 是否使用 object-fit-images 来兼容旧式浏览器
 objectFit = false
+[banner]
+light = "/banner.png"
+dark = "/banner.png"
+black = "/banner.png"
