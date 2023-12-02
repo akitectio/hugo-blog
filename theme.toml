@@ -19,12 +19,13 @@ features = [
 
 [author]
 name = "Trần Đức Duy"
-homepage = "https://github.com/akitectio"
+homepage = "https://akitect.io/"
+repo = "https://github.com/akitectio"
 
 [original]
-name = "Trần Đức Duy"
-homepage = "https://github.com/akitectio"
-repo = "https://github.com/akitectio"
+name = "DoIt"
+homepage = "https://hugodoit.pages.dev/"
+repo = "https://github.com/HEIGE-PCloud/DoIt"
 
 [module]
 [module.hugoVersion]
