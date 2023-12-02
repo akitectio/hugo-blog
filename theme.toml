@@ -4,7 +4,7 @@ license = "MIT"
 licenselink = "https://github.com/akitectio/hugo-blog/blob/main/LICENSE"
 description = "Blog Hugo Theme"
 homepage = "https://github.com/akitectio/hugo-blog"
-demosite = "https://hugo-blog.github.io"
+demosite = "https://hugo-blog.akitect.io"
 tags = ["blog", "clean", "responsive", "dark", "theme"]
 
 features = [
