@@ -1,2 +1,5 @@
 node_modules
 package-lock.json
+exampleSite/.hugo_build.lock
+exampleSite/resources
+exampleSite/public

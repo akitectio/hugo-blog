@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://hugo-blog.akitect.io/schema.json",
+    "title": "Hugo theme blog configuration",
+    "description": "The configuration for the Hugo blog theme",
+    "type": "object",
+    "properties": {
+        "baseURL": {
+            "type": "string",
+            "description": "Hostname (and path) to the root.",
+            "examples": [
+                "https://hugo-blog.akitect.io"
+            ]
+        },
+        "defaultContentLanguage": {
+            "type": "string",
+            "description": "Content without language indicator will default to this language.",
+            "examples": [
+                "en",
+                "zh-cn",
+                "fr",
+                "pl"
+            ],
+            "default": "en"
+        },
+        "theme": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "default": "HugoBlog",
+            "minItems": 1,
+            "pattern": "^HugoBlog$",
+            "contains": {
+                "pattern": "^HugoBlog$"
+            }
+        }
+    },
+    "required": [
+        "theme"
+    ]
+}

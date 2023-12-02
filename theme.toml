@@ -1,9 +1,9 @@
 version = 1
 name = "hugo-blog"
 license = "MIT"
-licenselink = "https://github.com/xdev-asia/hugo-blog/blob/main/LICENSE"
+licenselink = "https://github.com/akitectio/hugo-blog/blob/main/LICENSE"
 description = "Blog Hugo Theme"
-homepage = "https://github.com/xdev-asia/hugo-blog"
+homepage = "https://github.com/akitectio/hugo-blog"
 demosite = "https://hugo-blog.github.io"
 tags = ["blog", "clean", "responsive", "dark", "theme"]
 
@@ -18,13 +18,13 @@ features = [
 ]
 
 [author]
-name = "xdev-asia"
-homepage = "https://github.com/xdev-asia/"
+name = "Trần Đức Duy"
+homepage = "https://github.com/akitectio"
 
 [original]
-name = "DUY TRAN"
-homepage = "https://github.com/tdduydev"
-repo = "https://github.com/tdduydev"
+name = "Trần Đức Duy"
+homepage = "https://github.com/akitectio"
+repo = "https://github.com/akitectio"
 
 [module]
 [module.hugoVersion]

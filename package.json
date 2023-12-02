@@ -1,7 +1,7 @@
 {
-    "name": "doit-src",
+    "name": "akitect-hugo-blog",
     "version": "0.0.1",
-    "description": "DoIt theme source file",
+    "description": "Theme source file",
     "private": true,
     "scripts": {
         "dev-tw": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch ",
@@ -16,18 +16,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tdduydev/hugo-blog.git"
+        "url": "git+https://github.com/akitectio/hugo-blog.git"
     },
     "keywords": [
         "hugo",
         "theme"
     ],
-    "author": "PCloud",
+    "author": "Trần Đức Duy",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/tdduydev/hugo-blog/issues"
+        "url": "https://github.com/akitectio/hugo-blog/issues"
     },
-    "homepage": "https://github.com/tdduydev/hugo-blog#readme",
+    "homepage": "https://github.com/akitectio/hugo-blog#readme",
     "dependencies": {
         "@waline/client": "^2.15.8",
         "aplayer": "^1.10.1",

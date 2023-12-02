@@ -1,5 +1,5 @@
 {{- $version := .Get 0 -}}
-{{- $url := printf "https://github.com/tdduydev/hugo-blog/releases/tag/v%v" $version -}}
+{{- $url := printf "https://github.com/akitectio/hugo-blog/releases/tag/v%v" $version -}}
 {{- $type := .Get 1 | default "new" | lower -}}
 {{- $label := T $type -}}
 {{- $color := cond (eq $type "changed") "ff9101" "00b1ff" | cond (eq $type "deleted") "ff5252" -}}
@@ -7,7 +7,7 @@
 {{- $path := printf $pathTemplate $version $type -}}
 {{- $resource := resources.Get "svg/version.template.svg" -}}
 {{- $resource = $resource | resources.ExecuteAsTemplate $path (dict "version" $version "label" $label "color" $color) | minify -}}
-{{- $alt := printf "DoIt %v | %v" $label $version -}}
+{{- $alt := printf "hugo-blog %v | %v" $label $version -}}
 <a href="{{ $url }}" rel="noopener noreferrer" target="_blank">
     {{- dict "Src" $resource.RelPermalink "Alt" $alt "Class" "version" | partial "plugin/image.html" -}}
 </a>

@@ -8,7 +8,7 @@
                 </div>
             {{- end -}}
 
-            {{- /* Hugo, Host and DoIt */ -}}
+            {{- /* Hugo, Host and hugo-blog */ -}}
             {{- $post_info := slice -}}
             {{- if ne .Site.Params.footer.hugo false -}}
                 {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo %v">Hugo</a>` hugo.Version -}}
@@ -20,7 +20,7 @@
                 {{- $post_info = $post_info | append $e -}}
             {{- end -}}
             {{- if ne .Site.Params.footer.hugo false -}}
-                {{- $theme := .Scratch.Get "version" | printf `<a href="https://github.com/tdduydev/hugo-blog" target="_blank" rel="noopener noreferrer" title="DoIt %v"><i class="far fa-edit fa-fw"></i> DoIt</a>` -}}
+                {{- $theme := .Scratch.Get "version" | printf `<a href="https://github.com/akitectio/hugo-blog" target="_blank" rel="noopener noreferrer" title="hugo-blog %v"><i class="far fa-edit fa-fw"></i> hugo-blog</a>` -}}
                 {{- $e := dict "Theme" $theme | T "theme" -}}
                 {{- $post_info = $post_info | append $e -}}
             {{- end -}}
