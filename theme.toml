@@ -1,9 +1,9 @@
 version = 1
-name = "hugo-blog"
+name = "Hugo Akiect.io Blog"
 license = "MIT"
 licenselink = "https://github.com/akitectio/hugo-blog/blob/main/LICENSE"
 description = "Blog Hugo Theme"
-homepage = "https://github.com/akitectio/hugo-blog"
+homepage = "https://akitect.io/en/"
 demosite = "https://hugo-blog.akitect.io"
 tags = ["blog", "clean", "responsive", "dark", "theme"]
 
