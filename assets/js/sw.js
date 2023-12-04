@@ -1,4 +1,4 @@
-const CACHE_VERSION = 1
+const CACHE_VERSION = 2
 
 const BASE_CACHE_FILES = [
   '/css/style.min.css',
@@ -54,15 +54,15 @@ const SUPPORTED_METHODS = [
  * @param {string} url
  * @returns {boolean}
  */
-function isBlacklisted (url) {
+function isBlacklisted(url) {
   return (CACHE_BLACKLIST.length > 0)
     ? !CACHE_BLACKLIST.filter((rule) => {
-        if (typeof rule === 'function') {
-          return !rule(url)
-        } else {
-          return false
-        }
-      }).length
+      if (typeof rule === 'function') {
+        return !rule(url)
+      } else {
+        return false
+      }
+    }).length
     : false
 }
 
@@ -71,7 +71,7 @@ function isBlacklisted (url) {
  * @param {string} url
  * @returns {string}
  */
-function getFileExtension (url) {
+function getFileExtension(url) {
   const extension = url.split('.').reverse()[0].split('?')[0]
   return (extension.endsWith('/')) ? '/' : extension
 }
@@ -80,7 +80,7 @@ function getFileExtension (url) {
  * getTTL
  * @param {string} url
  */
-function getTTL (url) {
+function getTTL(url) {
   if (typeof url === 'string') {
     const extension = getFileExtension(url)
     if (typeof MAX_TTL[extension] === 'number') {
@@ -97,7 +97,7 @@ function getTTL (url) {
  * installServiceWorker
  * @returns {Promise}
  */
-function installServiceWorker () {
+function installServiceWorker() {
   return Promise.all(
     [
       caches.open(CACHE_VERSIONS.assets)
@@ -129,7 +129,7 @@ function installServiceWorker () {
  * cleanupLegacyCache
  * @returns {Promise}
  */
-function cleanupLegacyCache () {
+function cleanupLegacyCache() {
   const currentCaches = Object.keys(CACHE_VERSIONS)
     .map(
       (key) => {

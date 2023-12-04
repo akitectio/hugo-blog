@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noodp" />
     <title>{{- block "title" . }}{{ .Site.Title }}{{ end -}}</title>
-
     {{- partial "head/meta.html" . -}} {{- partial "head/link.html" . -}} {{-
     partial "head/seo.html" . -}} {{- $instantpage := .Scratch.Get "instantpage"
     | default dict -}} {{- if $instantpage.enable -}}
